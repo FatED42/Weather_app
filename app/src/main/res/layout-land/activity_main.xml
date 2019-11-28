@@ -13,10 +13,11 @@
         android:text="@string/cityName"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.083" />
 
     <TextView
         android:id="@+id/cityName"
@@ -27,46 +28,51 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
         android:id="@+id/tempValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/tempValue"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/temperature"
         app:layout_constraintTop_toBottomOf="@+id/cityName"
-        app:layout_constraintVertical_bias="0.597" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/temperature"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/tempValue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/coatOfArms"
-        android:layout_width="190dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="172dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="68dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cityName"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gerb_zelenograda" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
