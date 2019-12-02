@@ -4,4 +4,7 @@
     <string name="zelenograd">Zelenograd</string>
     <string name="tempValue" translatable="false">-1 °C</string>
     <string name="temperature">Temperature</string>
+    <string name="air_humidity">air humidity</string>
+    <string name="partly_cloudy">Partly cloudy</string>
+    <string name="overcast">overcast</string>
 </resources>
