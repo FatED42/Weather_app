@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Погодное приложение</string>
+    <string name="cityName">Город</string>
+    <string name="zelenograd">Зеленоград</string>
+    <string name="temperature">Температура</string>
+    <string name="air_humidity">Влажность</string>
+    <string name="partly_cloudy">Переменная облачность</string>
+    <string name="overcast">Облачность</string>
+</resources>
