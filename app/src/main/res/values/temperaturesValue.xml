@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date">
+        <item>22.12.19</item>
+        <item>23.12.19</item>
+        <item>24.12.19</item>
+        <item>25.12.19</item>
+        <item>26.12.19</item>
+    </string-array>
+
+    <string-array name="temperatures">
+        <item>+3</item>
+        <item>+6</item>
+        <item>+6</item>
+        <item>+2</item>
+        <item>-1</item>
+    </string-array>
+</resources>

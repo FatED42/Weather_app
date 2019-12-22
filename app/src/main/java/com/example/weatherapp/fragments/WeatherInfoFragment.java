@@ -12,27 +12,32 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.weatherapp.CoatOfArmsContainer;
 import com.example.weatherapp.R;
+import com.example.weatherapp.recyclerView.DataClass;
+import com.example.weatherapp.recyclerView.RecyclerViewAdapter;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class WeatherInfoFragment extends Fragment {
     private TextView humidityTextView;
     private TextView overcastTextView;
+    private RecyclerView temperatureRecyclerView;
+    private RecyclerViewAdapter adapter;
 
     static WeatherInfoFragment create(CoatOfArmsContainer container) {
-        WeatherInfoFragment fragment = new WeatherInfoFragment();    // создание
+        WeatherInfoFragment fragment = new WeatherInfoFragment();
 
-        // Передача параметра
         Bundle args = new Bundle();
         args.putSerializable("index", container);
         fragment.setArguments(args);
         return fragment;
     }
 
-    // Получить индекс из списка (фактически из параметра)
     int getIndex() {
         CoatOfArmsContainer coatContainer = (CoatOfArmsContainer) (Objects.requireNonNull(getArguments())
                 .getSerializable("index"));
@@ -78,6 +83,7 @@ public class WeatherInfoFragment extends Fragment {
         CheckBox overcastCheckBox = view.findViewById(R.id.checkBoxCloud);
         humidityTextView = view.findViewById(R.id.valueHumidityTextView);
         overcastTextView = view.findViewById(R.id.valueOvercastTextView);
+        temperatureRecyclerView = view.findViewById(R.id.tempRecyclerView);
 
         humidityCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,9 +100,28 @@ public class WeatherInfoFragment extends Fragment {
                 overcastTextView.setVisibility(visibility);
             }
         });
+        initRecyclerView();
     }
 
     private int visibleView(Boolean visible) {
         return visible ? View.VISIBLE : View.INVISIBLE;
+    }
+
+    private void initRecyclerView() {
+        String[] dates = getResources().getStringArray(R.array.date);
+        String[] temperatures = getResources().getStringArray(R.array.temperatures);
+
+        ArrayList<DataClass> list = new ArrayList<>(dates.length);
+
+        for (int i = 0; dates.length > i; i++)
+            list.add(new DataClass(dates[i], temperatures[i]));
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        adapter = new RecyclerViewAdapter(list);
+
+        layoutManager.setOrientation(RecyclerView.HORIZONTAL);
+
+        temperatureRecyclerView.setLayoutManager(layoutManager);
+        temperatureRecyclerView.setAdapter(adapter);
     }
 }
