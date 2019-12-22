@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Погодное приложение</string>
+    <string name="cityName">Город</string>
+    <string name="zelenograd">Зеленоград</string>
+    <string name="saint_petersburg">Санкт-Петербург</string>
+    <string name="moscow">Москва</string>
+    <string name="roslavl">Рославль</string>
+    <string name="temperature">Температура</string>
+    <string name="air_humidity">Влажность</string>
+    <string name="partly_cloudy">Переменная облачность</string>
+    <string name="overcast">Облачность</string>
+    <string name="more_details">О городе</string>
+    <string name="show_weather">Показать погоду</string>
+    <string name="empty_list">Пустой лист</string>
+</resources>
