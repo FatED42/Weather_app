@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Weather app</string>
+    <string name="cityName">City</string>
+    <string name="zelenograd">Zelenograd</string>
+    <string name="saint_petersburg">Saint-Petersburg</string>
+    <string name="moscow">Moscow</string>
+    <string name="roslavl">Roslavl</string>
+    <string name="tempValue" translatable="false">-1 °C</string>
+    <string name="temperature">Temperature</string>
+    <string name="air_humidity">air humidity</string>
+    <string name="partly_cloudy">Partly cloudy</string>
+    <string name="overcast">overcast</string>
+    <string name="more_details">About city</string>
+    <string name="show_weather">Show weather</string>
+    <string name="empty_list">empty_list</string>
+    <string name="choose">Your city</string>
+    <string name="city">city</string>
+    <string name="ok">OK</string>
 </resources>

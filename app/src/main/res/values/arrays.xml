@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Moscow</item>
+        <item>Saint-Petersburg</item>
+        <item>Zelenograd</item>
+        <item>Roslavl</item>
+    </string-array>
+
+    <integer-array name="coatofarms_imgs">
+        <item>@drawable/gerb_moscow</item>
+        <item>@drawable/gerb_sankt_peterburga</item>
+        <item>@drawable/gerb_zelenograda</item>
+        <item>@drawable/gerb_roslavl</item>
+    </integer-array>
+</resources>
