@@ -13,7 +13,6 @@ public class InfoActivity extends AppCompatActivity {
         setContentView(R.layout.coatofarms_activity);
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            // Если устройство перевернули в альбомную ориентацию, то надо эту activity закрыть
             finish();
             return;
         }

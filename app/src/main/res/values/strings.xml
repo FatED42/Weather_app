@@ -13,4 +13,7 @@
     <string name="more_details">About city</string>
     <string name="show_weather">Show weather</string>
     <string name="empty_list">empty_list</string>
+    <string name="choose">Your city</string>
+    <string name="city">city</string>
+    <string name="ok">OK</string>
 </resources>
